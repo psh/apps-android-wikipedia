@@ -4,6 +4,6 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>apps-android-wikipedia</groupId>
   <artifactId>kotlinmultiplatformsharedmodule-kmmbridge</artifactId>
-  <version>0.7.1667265598056</version>
+  <version>0.7.1667265967158</version>
   <packaging>zip</packaging>
 </project>

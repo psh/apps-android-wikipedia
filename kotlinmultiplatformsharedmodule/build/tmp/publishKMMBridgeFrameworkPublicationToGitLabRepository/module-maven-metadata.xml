@@ -3,8 +3,8 @@
   <groupId>apps-android-wikipedia</groupId>
   <artifactId>kotlinmultiplatformsharedmodule-kmmbridge</artifactId>
   <versioning>
-    <latest>0.7.1667265598056</latest>
-    <release>0.7.1667265598056</release>
+    <latest>0.7.1667265967158</latest>
+    <release>0.7.1667265967158</release>
     <versions>
       <version>0.7.1667233221939</version>
       <version>0.7.1667234806647</version>
@@ -13,7 +13,8 @@
       <version>0.7.1667237141648</version>
       <version>0.7.1667245913496</version>
       <version>0.7.1667265598056</version>
+      <version>0.7.1667265967158</version>
     </versions>
-    <lastUpdated>20221101012056</lastUpdated>
+    <lastUpdated>20221101012628</lastUpdated>
   </versioning>
 </metadata>
