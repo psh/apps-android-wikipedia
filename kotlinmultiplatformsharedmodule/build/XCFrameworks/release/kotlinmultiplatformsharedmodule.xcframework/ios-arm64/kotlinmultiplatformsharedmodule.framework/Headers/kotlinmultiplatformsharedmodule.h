@@ -156,6 +156,7 @@ __attribute__((swift_name("Platform")))
 @protocol KotlinmultiplatformsharedmodulePlatform
 @required
 @property (readonly) NSString *name __attribute__((swift_name("name")));
+@property (readonly) NSString *osType __attribute__((swift_name("osType")));
 @property (readonly) KotlinmultiplatformsharedmoduleType *type __attribute__((swift_name("type")));
 @end;
 
