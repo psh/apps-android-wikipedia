@@ -9,7 +9,7 @@ interface Platform {
         }
 }
 
-expect fun getPlatform(): Platform
+expect fun getPlatform(): Result<Platform>
 
 sealed class Type {
     object IOS : Type()

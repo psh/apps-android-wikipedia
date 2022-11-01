@@ -67,7 +67,7 @@ val specRepoPath: String by project
 val projectId: String by project
 
 kmmbridge {
-    timestampVersions()
+    gitTagVersions()
 
     mavenPublishArtifacts()
 

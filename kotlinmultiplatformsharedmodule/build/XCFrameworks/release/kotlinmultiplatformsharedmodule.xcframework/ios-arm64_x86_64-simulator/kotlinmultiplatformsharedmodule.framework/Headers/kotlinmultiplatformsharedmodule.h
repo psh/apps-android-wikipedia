@@ -194,7 +194,7 @@ __attribute__((swift_name("Type.IOS")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("PlatformKt")))
 @interface KotlinmultiplatformsharedmodulePlatformKt : KotlinmultiplatformsharedmoduleBase
-+ (id<KotlinmultiplatformsharedmodulePlatform>)getPlatform __attribute__((swift_name("getPlatform()")));
++ (id _Nullable)getPlatform __attribute__((swift_name("getPlatform()")));
 @end;
 
 #pragma pop_macro("_Nullable_result")

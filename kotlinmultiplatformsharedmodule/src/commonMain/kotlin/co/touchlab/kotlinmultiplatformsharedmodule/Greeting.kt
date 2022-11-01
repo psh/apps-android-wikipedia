@@ -1,9 +1,9 @@
 package co.touchlab.kotlinmultiplatformsharedmodule
 
 class Greeting {
-    private val platform: Platform = getPlatform()
+    private val platform: Result<Platform> = getPlatform()
 
     fun greeting(): String {
-        return "Hello, ${platform.name}!"
+        return "Hello, ${platform.getOrNull()?.name}!"
     }
 }

@@ -5,4 +5,4 @@ class AndroidPlatform : Platform {
     override val type: Type = Type.Android
 }
 
-actual fun getPlatform(): Platform = AndroidPlatform()
+actual fun getPlatform(): Result<Platform> = Result.success(AndroidPlatform())

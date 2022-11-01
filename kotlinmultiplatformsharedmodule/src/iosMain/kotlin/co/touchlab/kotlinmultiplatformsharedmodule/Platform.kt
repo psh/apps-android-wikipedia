@@ -7,4 +7,4 @@ class IOSPlatform: Platform {
     override val type: Type = Type.IOS
 }
 
-actual fun getPlatform(): Platform = IOSPlatform()
+actual fun getPlatform(): Result<Platform> = Result.success(IOSPlatform())
