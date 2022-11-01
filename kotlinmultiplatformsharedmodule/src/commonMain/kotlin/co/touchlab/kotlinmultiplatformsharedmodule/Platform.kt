@@ -1,6 +1,7 @@
 package co.touchlab.kotlinmultiplatformsharedmodule
 
 interface Platform {
+    val version: Int
     val name: String
     val type: Type
     val osType: String
