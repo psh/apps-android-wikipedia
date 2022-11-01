@@ -6,6 +6,8 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
+@class KotlinmultiplatformsharedmoduleType, KotlinmultiplatformsharedmoduleTypeAndroid, KotlinmultiplatformsharedmoduleTypeIOS;
+
 @protocol KotlinmultiplatformsharedmodulePlatform;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -154,6 +156,7 @@ __attribute__((swift_name("Platform")))
 @protocol KotlinmultiplatformsharedmodulePlatform
 @required
 @property (readonly) NSString *name __attribute__((swift_name("name")));
+@property (readonly) KotlinmultiplatformsharedmoduleType *type __attribute__((swift_name("type")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -162,6 +165,29 @@ __attribute__((swift_name("IOSPlatform")))
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 @property (readonly) NSString *name __attribute__((swift_name("name")));
+@property (readonly) KotlinmultiplatformsharedmoduleType *type __attribute__((swift_name("type")));
+@end;
+
+__attribute__((swift_name("Type")))
+@interface KotlinmultiplatformsharedmoduleType : KotlinmultiplatformsharedmoduleBase
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Type.Android")))
+@interface KotlinmultiplatformsharedmoduleTypeAndroid : KotlinmultiplatformsharedmoduleType
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)android __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) KotlinmultiplatformsharedmoduleTypeAndroid *shared __attribute__((swift_name("shared")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Type.IOS")))
+@interface KotlinmultiplatformsharedmoduleTypeIOS : KotlinmultiplatformsharedmoduleType
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)iOS __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) KotlinmultiplatformsharedmoduleTypeIOS *shared __attribute__((swift_name("shared")));
 @end;
 
 __attribute__((objc_subclassing_restricted))

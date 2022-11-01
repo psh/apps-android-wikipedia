@@ -1,9 +1,9 @@
 Pod::Spec.new do |spec|
     spec.name                     = 'kotlinmultiplatformsharedmodule'
-    spec.version                  = '0.7.1667245913496'
+    spec.version                  = '0.7.1667265598056'
     spec.homepage                 = 'Link to the Shared Module homepage'
     spec.source                   = { 
-                                      :http => 'https://gitlab.com/api/v4/projects/40523916/packages/maven/apps-android-wikipedia/kotlinmultiplatformsharedmodule-kmmbridge/0.7.1667245913496/kotlinmultiplatformsharedmodule-kmmbridge-0.7.1667245913496.zip',
+                                      :http => 'https://gitlab.com/api/v4/projects/40523916/packages/maven/apps-android-wikipedia/kotlinmultiplatformsharedmodule-kmmbridge/0.7.1667265598056/kotlinmultiplatformsharedmodule-kmmbridge-0.7.1667265598056.zip',
                                       :type => 'zip',
                                       :headers => ['Accept: application/octet-stream']
                                     }
