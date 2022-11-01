@@ -2,7 +2,7 @@
 import PackageDescription
 
 let remoteKotlinUrl = "https://gitlab.com/api/v4/projects/40523916/packages/maven/apps-android-wikipedia/kotlinmultiplatformsharedmodule-kmmbridge/0.8.8/kotlinmultiplatformsharedmodule-kmmbridge-0.8.8.zip"
-let remoteKotlinChecksum = "f87488f9c36f92d087229c2d57102a0fa8cdbfd5291011edc095f0e4ae57291d"
+let remoteKotlinChecksum = "e022e0720ee1e300fc4d25aa3c496995752a393ab4c1a6bd335ebc1ebcfc7a63"
 let packageName = "kotlinmultiplatformsharedmodule"
 
 let package = Package(
