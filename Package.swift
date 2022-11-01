@@ -1,8 +1,8 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let remoteKotlinUrl = "https://gitlab.com/api/v4/projects/40523916/packages/maven/apps-android-wikipedia/kotlinmultiplatformsharedmodule-kmmbridge/0.7.1667245913496/kotlinmultiplatformsharedmodule-kmmbridge-0.7.1667245913496.zip"
-let remoteKotlinChecksum = "1d40da9c134d5bbad765a810ffc355b5c63e02dc1a042e35e3ca6057ef88019d"
+let remoteKotlinUrl = "https://gitlab.com/api/v4/projects/40523916/packages/maven/apps-android-wikipedia/kotlinmultiplatformsharedmodule-kmmbridge/0.8.1667266080456/kotlinmultiplatformsharedmodule-kmmbridge-0.8.1667266080456.zip"
+let remoteKotlinChecksum = "abc9fc72433f19cfe02f65c3890cca3a89cf2373bd936a84fdbf8971d735555a"
 let packageName = "kotlinmultiplatformsharedmodule"
 
 let package = Package(
