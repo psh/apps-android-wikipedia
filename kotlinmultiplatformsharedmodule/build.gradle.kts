@@ -75,7 +75,7 @@ kmmbridge {
 
     cocoapods("https://${specRepoUser}:${gitLabPrivateToken}@gitlab.com/${specRepoPath}.git")
 
-    versionPrefix.set("0.7")
+    versionPrefix.set("0.8")
 }
 
 publishing {
