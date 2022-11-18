@@ -79,7 +79,7 @@ kmmbridge {
 
     cocoapods("https://${specRepoUser}:${gitLabPrivateToken}@gitlab.com/${specRepoPath}.git")
 
-    versionPrefix.set("0.8.1")
+    versionPrefix.set("0.8.22")
 }
 
 publishing {
