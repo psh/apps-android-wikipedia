@@ -17,9 +17,9 @@ kotlin {
         homepage = "Link to the Shared Module homepage"
         version = "1.0"
         ios.deploymentTarget = "14.1"
-        name = "123"
+        name = "cocoapodName"
         framework {
-            baseName = "456"
+            baseName = "cocoapodFramework"
         }
     }
     
@@ -79,7 +79,7 @@ kmmbridge {
 
     cocoapods("https://${specRepoUser}:${gitLabPrivateToken}@gitlab.com/${specRepoPath}.git")
 
-    versionPrefix.set("0.8")
+    versionPrefix.set("0.8.1")
 }
 
 publishing {
