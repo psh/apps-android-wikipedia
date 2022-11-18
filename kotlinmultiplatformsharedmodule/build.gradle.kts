@@ -67,7 +67,7 @@ val specRepoPath: String by project
 val projectId: String by project
 
 kmmbridge {
-    gitTagVersions()
+    manualVersions()
 
     mavenPublishArtifacts()
 
@@ -81,15 +81,20 @@ kmmbridge {
 publishing {
     repositories {
         maven {
-            url = uri("https://gitlab.com/api/v4/projects/${projectId}/packages/maven")
-            name = "GitLab"
-            credentials(HttpHeaderCredentials::class) {
-                name = "Private-Token"
-                value = gitLabPrivateToken
-            }
-            authentication {
-                create<HttpHeaderAuthentication>("header")
-            }
+            name = "myRepo"
+            url = uri(layout.buildDirectory.dir("my-local-repo"))
         }
+
+//        maven {
+//            url = uri("https://gitlab.com/api/v4/projects/${projectId}/packages/maven")
+//            name = "GitLab"
+//            credentials(HttpHeaderCredentials::class) {
+//                name = "Private-Token"
+//                value = gitLabPrivateToken
+//            }
+//            authentication {
+//                create<HttpHeaderAuthentication>("header")
+//            }
+//        }
     }
 }
