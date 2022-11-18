@@ -17,8 +17,9 @@ kotlin {
         homepage = "Link to the Shared Module homepage"
         version = "1.0"
         ios.deploymentTarget = "14.1"
+        name = "123"
         framework {
-            baseName = "kotlinmultiplatformsharedmodule"
+            baseName = "456"
         }
     }
     
@@ -65,6 +66,9 @@ val gitLabPrivateToken: String by project
 val specRepoUser: String by project
 val specRepoPath: String by project
 val projectId: String by project
+
+group = "the-group"
+version = "123"
 
 kmmbridge {
     manualVersions()
